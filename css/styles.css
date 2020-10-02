@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+@keyframes ebows {
+  from {
+    transform: rotateY(15deg);
+    transform: rotateX(15deg);
+  }
+  to {
+    transform: rotateY(0deg);
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes eyes {
+  20% {
+    transform: rotateY(15deg);
+    transform: rotateX(0deg);
+  }
+  40% {
+    transform: rotateY(5deg);
+    transform: rotateX(10deg);
+  }
+  60% {
+    transform: rotateY(-5deg);
+    transform: rotateX(-10deg);
+  }
+  80% {
+    transform: rotateY(5deg);
+    transform: rotateX(5deg);
+  }
+}
+
+@keyframes mouth {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+#ebows {
+  animation: ebows 1s infinite;
+}
+
+#eyeblack,
+#eyewhite {
+  animation: eyes 1s infinite;
+}
+
+#mouth {
+  animation: mouth 3s infinite;
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    transform: scale(.9);
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    transform: scale(0.75);
+
+  
+  }
+}
+
+@media (max-width: 767px) {
+  .col-xs-12 {
+    transform: scale(0.5);
+   
+  }
+}
